@@ -28,7 +28,7 @@ params = {
     'numero': int(horse_number),
     'jour': str(date),
     'heure': str(time),
-    'proba pl': float(proba_pl)
+    'proba pl': int(proba_pl)
 }
 
 BASE_URI = "https://pmu_breaking.ai/predict"
