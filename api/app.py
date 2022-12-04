@@ -1,3 +1,4 @@
+import pandas as pd
 import streamlit as st
 from fast import predict_winner
 
@@ -21,6 +22,10 @@ horse_number = st.number_input('Numero du cheval / Horse number')
 date = st.date_input('Date')
 time = st.time_input('Time')
 proba_pl = st.number_input('Proba')
+def predict_winner():
+    df = pd.read_csv('/Users/bastiengiudicelli/code/BastGiu/prevision_horses/2022-12-04_df_pred.csv')
+    return df
+
 df = predict_winner()
 st.dataframe(df)
 

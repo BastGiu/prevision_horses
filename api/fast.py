@@ -2,7 +2,6 @@ from datetime import datetime
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 import pandas as pd
-from taxifare.ml_logic.registry import load_model
 
 app = FastAPI()
 app.state.model = load_model()
