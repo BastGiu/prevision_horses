@@ -22,7 +22,7 @@ date = st.date_input('Date')
 time = st.time_input('Time')
 proba_pl = st.number_input('Proba')
 df = predict_winner()
-dataframe = st.write(df.head())
+st.dataframe(df)
 
 params = {
     'hippo' : str(hippo),
@@ -32,7 +32,6 @@ params = {
     'jour': str(date),
     'heure': str(time),
     'proba pl': int(proba_pl),
-    'dataframe' : dataframe
 }
 
 
