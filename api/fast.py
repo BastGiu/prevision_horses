@@ -20,11 +20,9 @@ app.add_middleware(
 def root():
     return {'greeting': 'Hello, are you looking for the best three horses in upcoming PMU race ?'}
 
-'''
-app = FastAPI()
-app.state.model = ...
-
 @app.get("/predict")
-...
-app.state.model.predict(...)
-'''
+def predict_winner():
+    df = pd.read_csv('/Users/bastiengiudicelli/code/BastGiu/prevision_horses/2022-12-04_df_pred.csv')
+    return df
+
+# app.state.model.predict(...)

@@ -1,4 +1,5 @@
 import streamlit as st
+from api.fast import predict_winner
 
 url = 'https://pmu_breaking.ai/predict'
 
@@ -20,6 +21,8 @@ horse_number = st.number_input('Numero du cheval / Horse number')
 date = st.date_input('Date')
 time = st.time_input('Time')
 proba_pl = st.number_input('Proba')
+df = predict_winner()
+dataframe = st.write(df.head())
 
 params = {
     'hippo' : str(hippo),
@@ -28,15 +31,14 @@ params = {
     'numero': int(horse_number),
     'jour': str(date),
     'heure': str(time),
-    'proba pl': int(proba_pl)
+    'proba pl': int(proba_pl),
+    'dataframe' : dataframe
 }
+
 
 BASE_URI = "https://pmu_breaking.ai/predict"
 response = requests.get(BASE_URI, params=params).json()
 taxiFareApiUrl = 'https://pmu_breaking.streamlit.app/predict'
-
-
-url = 'https://pmu_breaking.ai/predict'
 
 st.text('Fixed width text')
 st.markdown(f'The first 3 winners of this race are :\n {response["fare"]}') # see *
