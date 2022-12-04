@@ -1,7 +1,7 @@
 import streamlit as st
-from api.fast import predict_winner
+from fast import predict_winner
 
-url = 'https://pmu_breaking.ai/predict'
+url = 'https://pmu_breaking.ai/'
 
 if url == 'https://taxifare.lewagon.ai/predict':
 
