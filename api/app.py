@@ -1,6 +1,6 @@
 import streamlit as st
 
-url = 'https://taxifare.lewagon.ai/predict'
+url = 'https://pmu_breaking.ai/predict'
 
 if url == 'https://taxifare.lewagon.ai/predict':
 
@@ -10,6 +10,16 @@ import streamlit as st
 # My Stremlit App
 '''
 import requests
+
+params = {
+    'hippo' : str(hippo),
+    'prix': str(exhibit),
+    'Horse Name': str(horse_name),
+    'numero': int(numero),
+    'jour': str(day),
+    'heure': str(hour),
+    'proba pl': int(nb_passenger)
+}
 
 BASE_URI = "https://pmu_breaking.ai/predict"
 response = requests.get(BASE_URI, params=params).json()
@@ -33,13 +43,3 @@ st.write('Dataframe pmu breaking') # df, err, func, keras!
 st.title('See Horses Races') # Seahorse Races dha ha
 #st.header('My header')
 #st.subheader('My sub')
-
-
-params = {
-    'updated_races_datetime' : str(date) + ' ' + str(time),
-    'races_datetime': pic_lon,
-    'pickup_latitude': pic_lat,
-    'dropoff_longitude': drop_lon,
-    'dropoff_latitude': drop_lat,
-    'passenger_count': int(nb_passenger)
-}
