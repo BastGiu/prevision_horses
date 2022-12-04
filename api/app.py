@@ -11,28 +11,31 @@ import streamlit as st
 '''
 import requests
 
+# id,comp,jour,hippo,numcourse,cl,dist,partant,typec,cheque,numero,cheval,sexe,age,cotedirect,coteprob,recence,ecurie,distpoids,ecar,redkm,redkmInt,corde,defoeil,defoeilPrec,recul,gains,musiquept,musiqueche,m1,m2,m3,m4,m5,m6,jockey,musiquejoc,montesdujockeyjour,couruejockeyjour,victoirejockeyjour,entraineur,musiqueent,monteentraineurjour,courueentraineurjour,victoireentraineurjour,coursescheval,victoirescheval,placescheval,coursesentraineur,victoiresentraineur,placeentraineur,coursesjockey,victoiresjockey,placejockey,dernierhippo,dernierealloc,derniernbpartants,dernieredist,derniereplace,dernierecote,dernierJoc,dernierEnt,dernierProp,dernierRedKm,proprietaire,nbcoursepropjour,poidmont,pourcVictJock,pourcPlaceJock,pourcVictCheval,pourcPlaceCheval,pourcVictEnt,pourcPlaceEnt,pourcVictEntHippo,pourcVictJockHippo,pourcPlaceEntHippo,pourcPlaceJockHippo,pourcVictChevalHippo,pourcPlaceChevalHippo,nbrCourseJockHippo,nbrCourseEntHippo,nbrCourseChevalHippo,nbCourseCouple,nbVictCouple,nbPlaceCouple,TxVictCouple,TxPlaceCouple,nbCourseCoupleHippo,nbVictCoupleHippo,nbPlaceCoupleHippo,TxVictCoupleHippo,TxPlaceCoupleHippo,pere,mere,peremere,commen,gainsCarriere,gainsVictoires,gainsPlace,gainsAnneeEnCours,gainsAnneePrecedente,jumentPleine,engagement,handicapDistance,handicapPoids,indicateurInedit,tempstot,vha,recordG,recordGint,txreclam,dernierTxreclam,createdat,updatedat,rangTxVictJock,rangTxVictCheval,rangTxVictEnt,rangTxPlaceJock,rangTxPlaceCheval,rangTxPlaceEnt,rangRecordG,appetTerrain,idChe,idJockey,idEntraineur,defFirstTime,oeilFirstTime,estSupplemente,oeil,devise,dernierOeil,coat,country,id.1,jour.1,heure,hippo.1,reun,prix,prixnom,meteo,typec.1,partant.1,handi,reclam,dist.1,groupe,sex,corde.1,age.1,autos,cheque.1,europ,quinte,natpis,amat,courseabc,pistegp,arriv,lice,temperature,forceVent,directionVent,nebulositeLibelleCourt,condi,url,tempscourse,updatedAt,createdAt,devise.1,ref
+st.markdown('''Bonjour :)''')
+hippo = st.text_input('Hippodrome')
+exhibit = st.text_input('Prix')
+horse_name = st.text_input('Nom du cheval / Horse name')
+horse_number = st.text_input('Numero du cheval / Horse number')
+date = st.date_input('Date')
+time = st.time_input('Time')
+proba_pl = st.number_input('Proba')
+
 params = {
     'hippo' : str(hippo),
     'prix': str(exhibit),
     'Horse Name': str(horse_name),
-    'numero': int(numero),
-    'jour': str(day),
-    'heure': str(hour),
-    'proba pl': int(nb_passenger)
+    'numero': int(horse_number),
+    'jour': str(date),
+    'heure': str(time),
+    'proba pl': float(proba_pl)
 }
 
 BASE_URI = "https://pmu_breaking.ai/predict"
 response = requests.get(BASE_URI, params=params).json()
 taxiFareApiUrl = 'https://pmu_breaking.streamlit.app/predict'
 
-st.markdown('''Bonjour :)''')
-date = st.date_input('Date')
-time = st.time_input('Time')
-pic_lon = st.number_input('Pickup longitude')
-pic_lat = st.number_input('Pickup latitude')
-drop_lon = st.number_input('Dropoff longitude')
-drop_lat = st.number_input('Dropoff latitude')
-nb_passenger = st.number_input('How many passengers ?')
+
 url = 'https://pmu_breaking.ai/predict'
 
 st.text('Fixed width text')
