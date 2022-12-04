@@ -28,7 +28,8 @@ def clean_data() -> pd.DataFrame:
                             "prix", "prixnom", "partant", "groupe", "autos", "quinte", "arriv", "lice", "url", "updatedAt", "createdAt",
                             "devise","id.1", "comp.1", "jour.1", "hippo.1", "typec.1", "partant.1", "dist.1", "devise.1", "corde.1", "age.1", "cheque.1"
                             ])
-    # print(f'db : {db}')
+    leakage = ['cotedirect', 'coteprob', 'courueentraineurjour','victoireentraineurjour' ]    # print(f'db : {db}')
+    db = db.drop(columns = leakage)
 
     db = db.drop(columns = [ "europ", "natpis", "amat", "courseabc", "pistegp", "temperature", "forceVent", "directionVent", "nebulositeLibelleCourt", "condi", "tempscourse", "ref"])
 
@@ -46,11 +47,23 @@ def clean_data() -> pd.DataFrame:
     db = db.dropna(subset=['cl']) # on vire les lignes dont les résultats ne sont pas connus
     #print(f'db : {db}')
 
-    print("\nData cleaned 🫡")
+    mask = db['cl'].str.isnumeric()
+    db[mask == False] = 999
+    db['cl'] = pd.to_numeric(db['cl'] , errors='coerce') # on convertit toutes les valeurs en valeur int
+
+    # Tous les placés (podiums) prennent la valeur 1
+    mask1 = db['cl'] < 4
+    db[mask1] = 1
+
+    # Tous les hors podium prennent la valeur 0
+    mask2 = db['cl'] > 1
+    db[mask2] = 0
+    print("\ny has been refined 🫡")
     #print(f'{db.info()}')
 
     return db
 
+'''
 def refining_target():
     db = clean_data()
     mask = db['cl'].str.isnumeric()
@@ -92,3 +105,4 @@ def scaling_imputing():
     X = pd.DataFrame(X, columns=features)
     print("\nTarget scaled and imputed 🫡")
     return X, y
+'''
