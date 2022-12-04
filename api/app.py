@@ -22,7 +22,7 @@ horse_number = st.number_input('Numero du cheval / Horse number')
 date = st.date_input('Date')
 time = st.time_input('Time')
 proba_pl = st.number_input('Proba')
-data_url = 'https://github.com/BastGiu/prevision_horses/blob/master/data/2022-12-04_df_pred.csv'
+data_url = 'https://raw.githubusercontent.com/BastGiu/prevision_horses/master/data/2022-12-04_df_pred.csv'
 def predict_winner(data_url):
     df = pd.read_csv(data_url)
     return df
