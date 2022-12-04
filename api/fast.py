@@ -1,7 +1,6 @@
 from datetime import datetime
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from pmu_breaking.ml_logic.Model1.model import predict_from_saved_model
 import pandas as pd
 from taxifare.ml_logic.registry import load_model
 
