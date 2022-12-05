@@ -20,4 +20,4 @@ def display_dataframe(data_url):
     return df
 
 df = display_dataframe(data_url=data_url)
-st.display_dataframe(df)
+st.dataframe(df)
