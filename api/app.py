@@ -32,10 +32,10 @@ df = display_dataframe(data_url=data_url)
 st.dataframe(df)
 
 image = Image.open('data/images/chevaux.jpg')
-st.image(image, caption='Chevals', use_column_width=False)
+st.image(image, caption='Chevals', width=400)
 
 image2 = Image.open('data/images/people.png')
-st.image(image2, caption='Nous 4 dans quelques jours', use_column_width=False)
+st.image(image2, caption='Nous 4 dans quelques jours', width=400)
 
 hide_menu_style = """
         <style>
