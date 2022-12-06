@@ -6,7 +6,7 @@ from fast import predict_winner
 import streamlit as st
 import requests
 
-url = 'https://pmu_breaking.ai/'
+url = 'https://raw.githubusercontent.com/BastGiu/prevision_horses/master/data/2022-12-06_df_streamlit.csv'
 
 if url == 'https://taxifare.lewagon.ai/predict':
 
