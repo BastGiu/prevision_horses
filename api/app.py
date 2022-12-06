@@ -14,6 +14,9 @@ if url == 'https://taxifare.lewagon.ai/predict':
     st.markdown('Maybe you want to use your own API for the prediction, not the one provided by Le Wagon...')
 
 unicorn = st.select_slider("Displayed values:", ["🏇🏼", "🦄"])
+image = Image.open('data/images/chevaux.jpg')
+st.image(image, caption='Chevals', width=650)
+
 if unicorn:
     st.write('''# Pon.A.I 🦄''')
 else:
@@ -31,11 +34,8 @@ st.write('Vous pouvez consulter les prédictions faites par notre IA')
 df = display_dataframe(data_url=data_url)
 st.dataframe(df)
 
-image = Image.open('data/images/chevaux.jpg')
-st.image(image, caption='Chevals', width=400)
-
 image2 = Image.open('data/images/people.png')
-st.image(image2, caption='Nous 4 dans quelques jours', width=400)
+st.image(image2, caption='Nous 4 dans quelques jours', width=650)
 
 hide_menu_style = """
         <style>
