@@ -20,7 +20,7 @@ data_url = 'https://raw.githubusercontent.com/BastGiu/prevision_horses/master/da
 def display_dataframe(data_url):
     df = pd.read_csv(data_url)
     df.drop(columns="jour", inplace=True)
-    df.rename(columns={'hippo': 'hippodrome', 'prixnom': 'Prix', 'cheval': 'Nom du cheval', 'numero': 'Numéro du cheval', 'proba pl':'Winning probability'}, inplace=True)
+    df.rename(columns={'hippo': 'Hippodrome', 'prixnom': 'Prix', 'cheval': 'Nom du cheval', 'numero': 'Numéro du cheval', 'proba pl':"Probabilité d'être classé"}, inplace=True)
     return df
 
 df = display_dataframe(data_url=data_url)
