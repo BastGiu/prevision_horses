@@ -18,9 +18,9 @@ if url == 'https://taxifare.lewagon.ai/predict':
 
 data_url = 'https://raw.githubusercontent.com/BastGiu/prevision_horses/master/data/df_pred_2022-12-06.csv'
 def display_dataframe(data_url):
+    df = pd.read_csv(data_url)
     df.drop(columns="jour", inplace=True)
     df.rename(columns={'hippo': 'hippodrome', 'prixnom': 'Prix', 'cheval': 'Nom Cheval'}, inplace=True)
-    df = pd.read_csv(data_url)
     return df
 
 df = display_dataframe(data_url=data_url)
