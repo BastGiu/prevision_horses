@@ -12,7 +12,7 @@ if url == 'https://taxifare.lewagon.ai/predict':
 
     st.markdown('Maybe you want to use your own API for the prediction, not the one provided by Le Wagon...')
 if st.button('Change to unicorn'):
-    st.write(''''
+    st.write('''
             # Pon.A.I 🏇🏼
             ''')
 else:
@@ -30,12 +30,11 @@ def display_dataframe(data_url):
     df.rename(columns={'hippo': 'Hippodrome', 'prixnom': 'Prix', 'cheval': 'Nom du cheval', 'numero': 'Numéro du cheval','heure':'Départ de la course', 'proba pl':"Probabilité d'être classé"}, inplace=True)
     return df
 
-df = display_dataframe(data_url=data_url)
-
 if st.button('Show dataframe'):
     st.write('Data Frame is hidden')
 else:
     st.write('Here you can consult our predictions')
+    df = display_dataframe(data_url=data_url)
     st.dataframe(df)
 
 # Afficher sur streamlit
