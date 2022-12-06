@@ -12,8 +12,8 @@ url = 'https://raw.githubusercontent.com/BastGiu/prevision_horses/master/data/20
 if url == 'https://taxifare.lewagon.ai/predict':
 
     st.markdown('Maybe you want to use your own API for the prediction, not the one provided by Le Wagon...')
-unicorn = st.select_slider("Displayed values:", ["🏇🏼", "🦄"])
 
+unicorn = st.select_slider("Displayed values:", ["🏇🏼", "🦄"])
 if unicorn:
     st.write('''# Pon.A.I 🦄''')
 else:
@@ -31,10 +31,10 @@ st.write('Vous pouvez consulter les prédictions faites par notre IA')
 df = display_dataframe(data_url=data_url)
 st.dataframe(df)
 
-image = Image.open('prevision_horses/data/images/chevaux.png')
+image = Image.open('data/images/chevaux.jpg')
 st.image(image, caption='Chevals', use_column_width=False)
 
-image2 = Image.open('prevision_horses/data/images/people.png')
+image2 = Image.open('images/people.png')
 st.image(image2, caption='Nous 4 dans quelques jours', use_column_width=False)
 
 hide_menu_style = """
