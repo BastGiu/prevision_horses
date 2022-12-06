@@ -14,9 +14,9 @@ if url == 'https://taxifare.lewagon.ai/predict':
 unicorn = st.select_slider(" ", ["🏇🏼", "🦄"])
 
 if unicorn == "🏇🏼":
-    st.title('''# ponAI 🏇🏼''')
+    st.title('''ponAI 🏇🏼''')
 else:
-    st.title('''# ponAI 🦄''')
+    st.title('''ponAI 🦄''')
 image = Image.open('data/images/chevaux.jpg')
 st.image(image, caption='Chevaux', width=650)
 
@@ -27,12 +27,12 @@ def display_dataframe(data_url):
     df.rename(columns={'hippo': 'Hippodrome', 'prixnom': 'Prix', 'cheval': 'Cheval', 'numero': 'Numéro','heure':'Heure départ'}, inplace=True)
     return df
 
-st.write(' ## Prédictions du jour de l\'IA')
+st.write(' ## Prédictions du jour de ponAI')
 df = display_dataframe(data_url=data_url)
 st.dataframe(df)
 
 image2 = Image.open('data/images/people.png')
-st.image(image2, caption='Vous et vos amis avec pon AI \n', width=625)
+st.image(image2, caption='Youpi !', width=625)
 
 hide_menu_style = """
         <style>
@@ -40,5 +40,3 @@ hide_menu_style = """
         </style>
         """
 st.markdown(hide_menu_style, unsafe_allow_html=True)
-# Afficher sur streamlit
-st.markdown('''Youpi !''')
