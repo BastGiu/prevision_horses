@@ -16,7 +16,6 @@ image = Image.open('data/images/chevaux.jpg')
 st.image(image, caption='Chevaux', width=650)
 
 tog.st_toggle_switch(label="Magic button",
-                    key="Key1",
                     default_value="🏇🏼",
                     label_after = "🦄",
                     inactive_color = '#D3D3D3',
