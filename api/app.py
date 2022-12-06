@@ -14,9 +14,9 @@ if url == 'https://taxifare.lewagon.ai/predict':
 unicorn = st.select_slider(" ", ["🏇🏼", "🦄"])
 
 if unicorn == "🏇🏼":
-    st.write('''# pon AI 🏇🏼''')
+    st.title('''# ponAI 🏇🏼''')
 else:
-    st.write('''# pon AI 🦄''')
+    st.title('''# ponAI 🦄''')
 image = Image.open('data/images/chevaux.jpg')
 st.image(image, caption='Chevaux', width=650)
 
@@ -41,3 +41,4 @@ hide_menu_style = """
         """
 st.markdown(hide_menu_style, unsafe_allow_html=True)
 # Afficher sur streamlit
+st.markdown('''Youpi !''')
