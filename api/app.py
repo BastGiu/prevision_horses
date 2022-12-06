@@ -16,7 +16,7 @@ if st.button('Change to unicorn'):
             # Pon.A.I 🏇🏼
             ''')
 else:
-    st.write(''''
+    st.write('''
             # Pon.A.I 🦄
             ''')
 
