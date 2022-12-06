@@ -11,15 +11,14 @@ if url == 'https://taxifare.lewagon.ai/predict':
 
     st.markdown('Maybe you want to use your own API for the prediction, not the one provided by Le Wagon...')
 
-unicorn = st.select_slider("Displayed values:", ["🏇🏼", "🦄"])
-image = Image.open('data/images/chevaux.jpg')
-st.image(image, caption='Chevaux', width=650)
+unicorn = st.select_slider(" ", ["🏇🏼", "🦄"])
 
-if unicorn:
+if unicorn == "🏇🏼":
     st.write('''# Pon.A.I 🦄''')
 else:
     st.write('''# Pon.A.I 🏇🏼''')
-
+image = Image.open('data/images/chevaux.jpg')
+st.image(image, caption='Chevaux', width=650)
 
 data_url = 'https://raw.githubusercontent.com/BastGiu/prevision_horses/master/data/2022-12-06_df_streamlit.csv'
 def display_dataframe(data_url):
