@@ -11,7 +11,7 @@ url = 'https://raw.githubusercontent.com/BastGiu/prevision_horses/master/data/20
 if url == 'https://taxifare.lewagon.ai/predict':
 
     st.markdown('Maybe you want to use your own API for the prediction, not the one provided by Le Wagon...')
-if st.button('🦄'):
+if st.button('Magic button'):
     st.write('''
             # Pon.A.I 🦄
             ''')
