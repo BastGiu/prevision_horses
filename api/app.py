@@ -2,7 +2,6 @@
 
 import pandas as pd
 import streamlit as st
-import streamlit_toggle as tog
 from PIL import Image
 
 url = 'https://raw.githubusercontent.com/BastGiu/prevision_horses/master/data/2022-12-06_df_streamlit.csv'
@@ -15,7 +14,7 @@ unicorn = st.select_slider("Displayed values:", ["🏇🏼", "🦄"])
 image = Image.open('data/images/chevaux.jpg')
 st.image(image, caption='Chevaux', width=650)
 
-tog.st_toggle_switch(label="Magic button",
+st.st_toggle_switch(label="Magic button",
                     default_value="🏇🏼",
                     label_after = "🦄",
                     inactive_color = '#D3D3D3',
