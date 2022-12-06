@@ -4,6 +4,12 @@ import pandas as pd
 import streamlit as st
 from PIL import Image
 
+import streamlit as st
+from streamlit import st_toggleswitch
+
+awesomeness_enabled = st_toggleswitch("Enable awesomeness")
+if awesomeness_enabled:
+    st.write("Awesomeness has been enabled!")
 
 url = 'https://raw.githubusercontent.com/BastGiu/prevision_horses/master/data/2022-12-06_df_streamlit.csv'
 
