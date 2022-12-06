@@ -24,8 +24,8 @@ else:
 data_url = 'https://raw.githubusercontent.com/BastGiu/prevision_horses/master/data/2022-12-06_df_streamlit.csv'
 def display_dataframe(data_url):
     df = pd.read_csv(data_url)
-    df.drop(columns="jour", inplace=True)
-    df.rename(columns={'hippo': 'Hippodrome', 'prixnom': 'Prix', 'cheval': 'Nom', 'numero': 'Numéro','heure':'Départ de la course', 'proba pl':"Probabilité classé"}, inplace=True)
+    df.drop(columns=["jour", "proba pl"], inplace=True)
+    df.rename(columns={'hippo': 'Hippodrome', 'prixnom': 'Prix', 'cheval': 'Nom', 'numero': 'Numéro','heure':'Heure départ'}, inplace=True)
     return df
 
 st.write('Here you can consult our predictions')
