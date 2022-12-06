@@ -21,8 +21,6 @@ def root():
 @app.get("/predict")
 def predict_winner():
     df = pd.read_csv('/Users/bastiengiudicelli/code/BastGiu/prevision_horses/2022-12-04_df_pred.csv')
-    df.drop(columns="jour", inplace=True)
-    df.rename(columns={'hippo': 'hippodrome', 'prixnom': 'Prix', 'cheval': 'Nom Cheval'}, inplace=True)
     return df
 
 # app.state.model.predict(...)
