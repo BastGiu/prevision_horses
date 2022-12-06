@@ -12,12 +12,12 @@ url = 'https://raw.githubusercontent.com/BastGiu/prevision_horses/master/data/20
 if url == 'https://taxifare.lewagon.ai/predict':
 
     st.markdown('Maybe you want to use your own API for the prediction, not the one provided by Le Wagon...')
-a = st.write('''# Pon.A.I 🏇🏼''')
-if st.button('Magic button'):
-    if a == st.write('''# Pon.A.I 🏇🏼'''):
-        a = st.write('''# Pon.A.I 🦄''')
-    elif a == st.write('''# Pon.A.I 🦄'''):
-        a == st.write('''# Pon.A.I 🏇🏼''')
+unicorn = st.select_slider("Displayed values:", ["🏇🏼", "🦄"])
+
+if unicorn:
+    st.write('''# Pon.A.I 🦄''')
+else:
+    st.write('''# Pon.A.I 🏇🏼''')
 
 
 data_url = 'https://raw.githubusercontent.com/BastGiu/prevision_horses/master/data/2022-12-06_df_streamlit.csv'
