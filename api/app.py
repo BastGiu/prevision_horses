@@ -27,7 +27,7 @@ def display_dataframe(data_url):
     df.rename(columns={'hippo': 'Hippodrome', 'prixnom': 'Prix', 'cheval': 'Cheval', 'numero': 'Numéro','heure':'Heure départ'}, inplace=True)
     return df
 
-st.write('Vous pouvez consulter les prédictions faites par notre IA')
+st.write(' ## Prédictions du jour de l\'IA')
 df = display_dataframe(data_url=data_url)
 st.dataframe(df)
 
