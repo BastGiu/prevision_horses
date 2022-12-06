@@ -34,7 +34,7 @@ st.dataframe(df)
 image = Image.open('data/images/chevaux.jpg')
 st.image(image, caption='Chevals', use_column_width=False)
 
-image2 = Image.open('images/people.png')
+image2 = Image.open('data/images/people.png')
 st.image(image2, caption='Nous 4 dans quelques jours', use_column_width=False)
 
 hide_menu_style = """
