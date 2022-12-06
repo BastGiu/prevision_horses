@@ -2,7 +2,8 @@
 
 import pandas as pd
 import streamlit as st
-import streamlit as st
+
+import  streamlit_toggle as tog
 from PIL import Image
 
 url = 'https://raw.githubusercontent.com/BastGiu/prevision_horses/master/data/2022-12-06_df_streamlit.csv'
@@ -11,7 +12,7 @@ if url == 'https://taxifare.lewagon.ai/predict':
 
     st.markdown('Maybe you want to use your own API for the prediction, not the one provided by Le Wagon...')
 
-unicorn = st.select_slider("Displayed values:", ["🦄", "🏇🏼"])
+unicorn = st.select_slider("Displayed values:", ["🏇🏼", "🦄"])
 image = Image.open('data/images/chevaux.jpg')
 st.image(image, caption='Chevaux', width=650)
 
