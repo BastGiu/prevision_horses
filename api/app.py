@@ -2,8 +2,7 @@
 
 import pandas as pd
 import streamlit as st
-
-import  streamlit_toggle as tog
+import streamlit_toggle as tog
 from PIL import Image
 
 url = 'https://raw.githubusercontent.com/BastGiu/prevision_horses/master/data/2022-12-06_df_streamlit.csv'
