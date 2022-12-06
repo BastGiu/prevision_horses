@@ -14,9 +14,9 @@ if url == 'https://taxifare.lewagon.ai/predict':
 unicorn = st.select_slider(" ", ["🏇🏼", "🦄"])
 
 if unicorn == "🏇🏼":
-    st.write('''# Pon.A.I 🏇🏼''')
+    st.write('''# pon AI 🏇🏼''')
 else:
-    st.write('''# Pon.A.I 🦄''')
+    st.write('''# pon AI 🦄''')
 image = Image.open('data/images/chevaux.jpg')
 st.image(image, caption='Chevaux', width=650)
 
