@@ -13,7 +13,7 @@ if url == 'https://taxifare.lewagon.ai/predict':
 
 unicorn = st.select_slider("Displayed values:", ["🦄", "🏇🏼"])
 image = Image.open('data/images/chevaux.jpg')
-st.image(image, caption='Chevals', width=650)
+st.image(image, caption='Chevaux', width=650)
 
 tog.st_toggle_switch(label="Magic button",
                     key="Key1",
