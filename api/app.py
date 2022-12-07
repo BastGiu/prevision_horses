@@ -63,7 +63,7 @@ def random_emoji():
 
 # initialize emoji as a Session State variable
 if "emoji" not in st.session_state:
-    st.session_state.emoji = "👈"
+    st.session_state.emoji = "👆"
 
 emojis = [":racehorse:", ":horse_racing:", ":carousel_horse:", ":unicorn_face:", ":money_with_wings:"]
 
