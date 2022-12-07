@@ -3,11 +3,10 @@
 import pandas as pd
 import streamlit as st
 from PIL import Image
-
 import streamlit as st
 import streamlit_toggle as tog
 
-tog.st_toggle_switch(label="Label",
+tog.streamlit_toggle_switch(label="Label",
                     key="Key1",
                     default_value=False,
                     label_after = False,
