@@ -32,7 +32,7 @@ st.dataframe(df)
 
 
 image2 = Image.open('data/images/people.png')
-st.image(image2, caption='Youpi !', width=630)
+st.image(image2, caption='Youpi !', width=650)
 
 hide_menu_style = """
         <style>
