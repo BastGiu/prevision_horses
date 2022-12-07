@@ -39,7 +39,7 @@ st.markdown("<h2 style='text-align: center;'>Qu'est-ce que ponAI ? 🏇🏼</h2>
 st.write("ponAI est une intelligence artificielle (AI) qui fournit des tuyaux pour les courses hippiques du jour. Il s'agit d'un algorithme de machine learning qui est entrainé pour prédire les chevaux <i>placés</i>.\n", unsafe_allow_html=True)
 st.write("\n")
 # People images
-image2 = Image.open('data/images/people.png')
+image2 = Image.open('/data/images/people.png')
 st.image(image2, caption='Youpi !', width=650)
 
 hide_menu_style = """
