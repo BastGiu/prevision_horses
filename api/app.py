@@ -15,7 +15,7 @@ if url == 'https://taxifare.lewagon.ai/predict':
     st.markdown('Maybe you want to use your own API for the prediction, not the one provided by Le Wagon...')
 
 st.markdown("<h1 style='text-align: center;'>ponAI 🏇🏼</h1>", unsafe_allow_html=True)
-image3 = Image.open('data/images/Logo_PonAI')
+image3 = Image.open('data/images/Logo_PonAI.png')
 st.image(image3, caption='Logo', width=40)
 st.markdown("<h3 style='text-align: center;'>L'AI qui donne des tuyaux </h3>", unsafe_allow_html=True)
 
