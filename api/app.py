@@ -23,7 +23,7 @@ def display_dataframe(data_url):
     df.rename(columns={'hippo': 'Hippodrome', 'prixnom': 'Prix', 'cheval': 'Cheval', 'numero': 'Numéro','heure':'Heure départ'}, inplace=True)
     return df
 
-col1, col2, col3 , col4 = st.columns(5)
+col1, col2, col3 , col4 = st.columns(4)
 
 with col1:
     pass
