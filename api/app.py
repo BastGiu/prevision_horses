@@ -26,6 +26,7 @@ data_url = 'https://raw.githubusercontent.com/BastGiu/prevision_horses/master/da
 def display_dataframe(data_url):
     df = pd.read_csv(data_url)
     df.drop(columns=["jour", "proba pl", "country"], inplace=True)
+    df.heure = df.heure.map(lambda x: str(x)[0:-3])
     df.rename(columns={'hippo': 'Hippodrome', 'prixnom': 'Prix', 'cheval': 'Cheval','numero' : 'Numéro','heure':'Heure course'}, inplace=True)
     return df[["Hippodrome", "Heure course", "Prix", "Cheval", "Numéro"]]
 
