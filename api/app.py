@@ -8,6 +8,8 @@ import streamlit as st
 st.set_page_config(
     page_title='ponAI',
     page_icon='🏇🏼')
+image3 = Image.open('data/images/Logo_PonAI.png')
+st.image(image3, caption=' ', width=40)
 url = 'https://raw.githubusercontent.com/BastGiu/prevision_horses/master/data/2022-12-06_df_streamlit.csv'
 
 if url == 'https://taxifare.lewagon.ai/predict':
@@ -15,8 +17,6 @@ if url == 'https://taxifare.lewagon.ai/predict':
     st.markdown('Maybe you want to use your own API for the prediction, not the one provided by Le Wagon...')
 
 st.markdown("<h1 style='text-align: center;'>ponAI 🏇🏼</h1>", unsafe_allow_html=True)
-image3 = Image.open('data/images/Logo_PonAI.png')
-st.image(image3, caption='Logo', width=40)
 st.markdown("<h3 style='text-align: center;'>L'AI qui donne des tuyaux </h3>", unsafe_allow_html=True)
 
 # Horses image
