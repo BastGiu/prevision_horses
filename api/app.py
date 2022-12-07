@@ -20,10 +20,10 @@ st.image(image, caption='Chevaux qui galopent', width=650)
 
 data_url = 'https://raw.githubusercontent.com/BastGiu/prevision_horses/master/data/df_pred_2022-12-07.csv '
 def display_dataframe(data_url):
-    df = pd.read_csv(data_url, index=False)
+    df = pd.read_csv(data_url, index_col=None)
     df.drop(columns=["jour", "proba pl", "country"], inplace=True)
     df.rename(columns={'hippo': 'Hippodrome', 'prixnom': 'Prix', 'cheval': 'Cheval','numero' : 'Numéro','heure':'Heure départ'}, inplace=True)
-    return df["Hippodrome", "Heure", "Prix", "Cheval", "Numéro", "Heure départ"]
+    return df["Hippodrome", "Heure départ", "Prix", "Cheval", "Numéro"]
 
 st.markdown("<h2 style='text-align: center;'>👇    Prédictions du jour    👇</h2>", unsafe_allow_html=True)
 st.write("\n \n \n \n \n")
