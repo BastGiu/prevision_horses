@@ -75,3 +75,15 @@ st.button(f"Magic button {st.session_state.emoji}", on_click=random_emoji)
 # Display dataframe
 
 # st.write("ponAI est une intelligence artificielle qui a pour but de donner des prédictions sur le podium final")
+col1, col2, col3 , col4, col5 = st.beta_columns(5)
+
+with col1:
+    pass
+with col2:
+    pass
+with col4:
+    pass
+with col5:
+    pass
+with col3 :
+    center_button = st.button('Button')
