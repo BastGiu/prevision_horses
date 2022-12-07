@@ -16,29 +16,24 @@ st.markdown("<h3 style='text-align: center;'>L'AI qui donne des tuyaux </h3>", u
 
 # Horses image
 image = Image.open('data/images/chevaux.jpg')
-st.image(image, caption='Chevaux', width=650)
+st.image(image, caption='Chevaux qui galopent', width=650)
 
 data_url = 'https://raw.githubusercontent.com/BastGiu/prevision_horses/master/data/df_pred_2022-12-07.csv '
 def display_dataframe(data_url):
-    df = pd.read_csv(data_url, index_col=0)
+    df = pd.read_csv(data_url, index_col=0, index=False)
     df.drop(columns=["jour", "proba pl"], inplace=True)
     df.rename(columns={'hippo': 'Hippodrome', 'prixnom': 'Prix', 'cheval': 'Cheval','numero' : 'Numéro','heure':'Heure départ'}, inplace=True)
     return df
 
-#if st.button("Magic Button"):
-#    st.write(' ## Prédictions du jour de ponAI 🦄')
-#else:
-#    st.write(' ## Prédictions du jour de ponAI 🏇🏼')
-
-# Display dataframe
 st.markdown("<h2 style='text-align: center;'>👇    Prédictions du jour    👇</h2>", unsafe_allow_html=True)
-st.write("\n \n \n")
+st.write("\n \n \n \n \n")
 df = display_dataframe(data_url=data_url)
 st.dataframe(df)
-st.write("\n \n \n")
+st.write("\n \n \n \n \n")
 st.markdown("<h2 style='text-align: center;'>Qu'est-ce que ponAI ? 🏇🏼</h2>", unsafe_allow_html=True)
-st.write("ponAI est une intelligence artificielle (AI) qui fournit des tuyaux pour les courses équestres du jour. \n Il s'agit d'un algorithme de machine learning qui est entrainé pour prédire les chevaux <i>placés</i>.\n", unsafe_allow_html=True)
-
+st.write("ponAI est une intelligence artificielle (AI) qui fournit des tuyaux pour les courses hippiques du jour.")
+st.write("Il s'agit d'un algorithme de machine learning qui est entrainé pour prédire les chevaux <i>placés</i>.\n", unsafe_allow_html=True)
+st.write("\n")
 # People images
 image2 = Image.open('data/images/people.png')
 st.image(image2, caption='Youpi !', width=650)
@@ -49,5 +44,11 @@ hide_menu_style = """
         </style>
         """
 st.markdown(hide_menu_style, unsafe_allow_html=True)
+#if st.button("Magic Button"):
+#    st.write(' ## Prédictions du jour de ponAI 🦄')
+#else:
+#    st.write(' ## Prédictions du jour de ponAI 🏇🏼')
 
-st.write("ponAI est une intelligence artificielle qui a pour but de donner des prédictions sur le podium final")
+# Display dataframe
+
+# st.write("ponAI est une intelligence artificielle qui a pour but de donner des prédictions sur le podium final")
