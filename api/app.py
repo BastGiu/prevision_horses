@@ -7,10 +7,14 @@ from PIL import Image
 import streamlit as st
 import streamlit_toggle as tog
 
-awesomeness_enabled = tog.st_toggle_switch("Enable awesomeness")
-if awesomeness_enabled:
-    st.write("Awesomeness has been enabled!")
-
+tog.st_toggle_switch(label="Label",
+                    key="Key1",
+                    default_value=False,
+                    label_after = False,
+                    inactive_color = '#D3D3D3',
+                    active_color="#11567f",
+                    track_color="#29B5E8"
+                    )
 url = 'https://raw.githubusercontent.com/BastGiu/prevision_horses/master/data/2022-12-06_df_streamlit.csv'
 
 if url == 'https://taxifare.lewagon.ai/predict':
