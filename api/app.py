@@ -31,13 +31,13 @@ def display_dataframe(data_url):
 #    st.write(' ## Prédictions du jour de ponAI 🏇🏼')
 
 # Display dataframe
-st.markdown("<h2 style='text-align: center;'>👇    Prédictions du jour    👇</h2>")
+st.markdown("<h2 style='text-align: center;'>👇    Prédictions du jour    👇</h2>", unsafe_allow_html=True)
 st.write("\n \n \n")
 df = display_dataframe(data_url=data_url)
 st.dataframe(df)
 st.write("\n \n \n")
 st.markdown("<h2 style='text-align: center;'>Qu'est-ce que ponAI ? 🏇🏼</h2>", unsafe_allow_html=True)
-st.write("ponAI est une intelligence artificielle (AI) qui fournit des tuyaux pour les courses équestres du jour. \n Il s'agit d'un algorithme de machine learning qui est entrainé pour prédire les chevaux <i>placés</i>.\n")
+st.write("ponAI est une intelligence artificielle (AI) qui fournit des tuyaux pour les courses équestres du jour. \n Il s'agit d'un algorithme de machine learning qui est entrainé pour prédire les chevaux <i>placés</i>.\n", unsafe_allow_html=True)
 
 # People images
 image2 = Image.open('data/images/people.png')
