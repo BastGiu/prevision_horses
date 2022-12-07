@@ -23,19 +23,10 @@ def display_dataframe(data_url):
     df.rename(columns={'hippo': 'Hippodrome', 'prixnom': 'Prix', 'cheval': 'Cheval', 'numero': 'Numéro','heure':'Heure départ'}, inplace=True)
     return df
 
-col1, col2, col3 , col4 = st.columns(4)
-
-with col1:
-    pass
-with col2:
-    pass
-with col4:
-    pass
-with col3 :
-    if st.button("Opérer la magie"):
-        st.write(' ## Prédictions du jour de ponAI 🦄')
-    else:
-        st.write(' ## Prédictions du jour de ponAI 🏇🏼')
+if st.button("Opérer la magie"):
+    st.write(' ## Prédictions du jour de ponAI 🦄')
+else:
+    st.write(' ## Prédictions du jour de ponAI 🏇🏼')
 df = display_dataframe(data_url=data_url)
 st.dataframe(df)
 
