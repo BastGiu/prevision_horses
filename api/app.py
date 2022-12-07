@@ -4,9 +4,9 @@ import pandas as pd
 import streamlit as st
 from PIL import Image
 import streamlit as st
-from streamlit_toggle import st_toggle_switch as tog
+from streamlit_toggle import st_toggle_switch
 
-tog.streamlit_toggle_switch(label="Label",
+st_toggle_switch(label="Label",
                     key="Key1",
                     default_value=False,
                     label_after = False,
