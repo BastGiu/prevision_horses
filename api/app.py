@@ -23,7 +23,7 @@ def display_dataframe(data_url):
     df.rename(columns={'hippo': 'Hippodrome', 'prixnom': 'Prix', 'cheval': 'Cheval', 'numero': 'Numéro','heure':'Heure départ'}, inplace=True)
     return df
 
-if st.button("<h1 style=text-align: center; '>Opérer la magie</h1>", unsafe_allow_html=True):
+if st.button("<h1 style='text-align: center;'>Opérer la magie</h1>", unsafe_allow_html=True):
     st.write(' ## Prédictions du jour de ponAI 🦄')
 else:
     st.write(' ## Prédictions du jour de ponAI 🏇🏼')
