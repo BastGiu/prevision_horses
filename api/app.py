@@ -5,6 +5,7 @@ import streamlit as st
 from PIL import Image
 import streamlit as st
 
+st.beta_set_page_config(page_title='ponAI', page_icon='data/images/Logo_PonAI.png')
 url = 'https://raw.githubusercontent.com/BastGiu/prevision_horses/master/data/2022-12-06_df_streamlit.csv'
 
 if url == 'https://taxifare.lewagon.ai/predict':
