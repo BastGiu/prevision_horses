@@ -34,12 +34,14 @@ st.write("\n \n \n \n \n")
 df = display_dataframe(data_url=data_url)
 st.dataframe(df)
 st.write("\n \n \n \n \n")
-st.markdown("<h2 style='text-align: center;'>Qu'est-ce que ponAI ? 🏇🏼</h2>", unsafe_allow_html=True)
+st.markdown("<h2 style='text-align: center;'>Qu'est-ce que PonAI ? 🏇🏼</h2>", unsafe_allow_html=True)
 st.write("PonAI est une intelligence artificielle (AI) qui fournit des tuyaux pour les courses hippiques du jour. Il s'agit d'un algorithme de machine learning qui est entrainé pour prédire les chevaux <i>placés</i>.\n", unsafe_allow_html=True)
-st.write("\n \n \n")
+st.write("\n \n ")
+st.write("\n \n ")
 # People images
 image2 = Image.open('data/images/people.png')
 st.image(image2, caption='Youpi !', width=650)
+st.write("\n \n \n")
 st.write("\n \n \n")
 
 hide_menu_style = """
