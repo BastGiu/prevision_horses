@@ -11,12 +11,12 @@ if url == 'https://taxifare.lewagon.ai/predict':
 
     st.markdown('Maybe you want to use your own API for the prediction, not the one provided by Le Wagon...')
 
-unicorn = st.select_slider(" ", ["🏇🏼", "🦄"])
+st.markdown("<h1 style='text-align: center; color: red;'>ponAI 🏇🏼</h1>", unsafe_allow_html=True)
 
-if unicorn == "🏇🏼":
-    st.title('''ponAI 🏇🏼''')
-else:
-    st.title('''ponAI 🦄''')
+
+
+st.title('''ponAI 🏇🏼''')
+
 image = Image.open('data/images/chevaux.jpg')
 st.image(image, caption='Chevaux', width=650)
 
@@ -27,12 +27,12 @@ def display_dataframe(data_url):
     df.rename(columns={'hippo': 'Hippodrome', 'prixnom': 'Prix', 'cheval': 'Cheval', 'numero': 'Numéro','heure':'Heure départ'}, inplace=True)
     return df
 
-st.write(' ## Prédictions du jour de ponAI')
+st.write(' ## Prédictions du jour de ponAI 🦄')
 df = display_dataframe(data_url=data_url)
 st.dataframe(df)
 
 image2 = Image.open('data/images/people.png')
-st.image(image2, caption='Youpi !', width=625)
+st.image(image2, caption='Youpi !', width=630)
 
 hide_menu_style = """
         <style>
