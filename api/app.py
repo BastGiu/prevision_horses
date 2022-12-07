@@ -7,7 +7,7 @@ from PIL import Image
 import streamlit as st
 import streamlit_toggle as tog
 
-awesomeness_enabled = tog("Enable awesomeness")
+awesomeness_enabled = tog.st_toggle_switch("Enable awesomeness")
 if awesomeness_enabled:
     st.write("Awesomeness has been enabled!")
 
