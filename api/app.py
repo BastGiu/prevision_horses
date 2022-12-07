@@ -14,7 +14,7 @@ if url == 'https://taxifare.lewagon.ai/predict':
 st.markdown("<h1 style='text-align: center;'>ponAI 🏇🏼</h1>", unsafe_allow_html=True)
 
 image = Image.open('data/images/chevaux.jpg')
-st.image(image, caption='Chevaux', width=650)
+st.image(image, caption='Chevaux', width=800)
 
 data_url = 'https://raw.githubusercontent.com/BastGiu/prevision_horses/master/data/df_pred_2022-12-07.csv '
 def display_dataframe(data_url):
@@ -32,7 +32,7 @@ st.dataframe(df)
 
 
 image2 = Image.open('data/images/people.png')
-st.image(image2, caption='Youpi !', width=630)
+st.image(image2, caption='Youpi !', width=800)
 
 hide_menu_style = """
         <style>
