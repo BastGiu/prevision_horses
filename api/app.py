@@ -12,10 +12,11 @@ if url == 'https://taxifare.lewagon.ai/predict':
     st.markdown('Maybe you want to use your own API for the prediction, not the one provided by Le Wagon...')
 
 st.markdown("<h1 style='text-align: center;'>ponAI 🏇🏼</h1>", unsafe_allow_html=True)
+st.markdown("<h2 style='text-align: center;'>L'IA qui donne des tuyaux sur les paris équins</h2>", unsafe_allow_html=True)
 
 image = Image.open('data/images/chevaux.jpg')
 st.image(image, caption='Chevaux', width=650)
-
+st.write("👇    Prédictions du jour    👇")
 data_url = 'https://raw.githubusercontent.com/BastGiu/prevision_horses/master/data/df_pred_2022-12-07.csv '
 def display_dataframe(data_url):
     df = pd.read_csv(data_url, index_col=0)
@@ -40,3 +41,5 @@ hide_menu_style = """
         </style>
         """
 st.markdown(hide_menu_style, unsafe_allow_html=True)
+
+st.write("ponAI est une intelligence artificielle qui a pour but de donner des prédictions sur le podium final")
