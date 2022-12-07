@@ -8,8 +8,7 @@ import streamlit as st
 st.set_page_config(
     page_title='ponAI',
     page_icon='🏇🏼')
-image3 = Image.open('data/images/Logo_PonAI.png')
-st.image(image3, caption=' ', width=40)
+
 url = 'https://raw.githubusercontent.com/BastGiu/prevision_horses/master/data/2022-12-06_df_streamlit.csv'
 
 if url == 'https://taxifare.lewagon.ai/predict':
