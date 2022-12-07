@@ -18,7 +18,7 @@ st.image(image, caption='Chevaux', width=800)
 
 data_url = 'https://raw.githubusercontent.com/BastGiu/prevision_horses/master/data/df_pred_2022-12-07.csv '
 def display_dataframe(data_url):
-    df = pd.read_csv(data_url)
+    df = pd.read_csv(data_url, index_col=0)
     df.drop(columns=["jour", "proba pl"], inplace=True)
     df.rename(columns={'hippo': 'Hippodrome', 'prixnom': 'Prix', 'cheval': 'Cheval','numero' : 'Numéro','heure':'Heure départ'}, inplace=True)
     return df
