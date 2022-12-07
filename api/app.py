@@ -23,7 +23,7 @@ def display_dataframe(data_url):
     df = pd.read_csv(data_url, index_col=None)
     df.drop(columns=["jour", "proba pl", "country"], inplace=True)
     df.rename(columns={'hippo': 'Hippodrome', 'prixnom': 'Prix', 'cheval': 'Cheval','numero' : 'Numéro','heure':'Heure départ'}, inplace=True)
-    return df["Hippodrome", "Heure départ", "Prix", "Cheval", "Numéro"]
+    return df[["Hippodrome", "Heure départ", "Prix", "Cheval", "Numéro"]]
 
 st.markdown("<h2 style='text-align: center;'>👇    Prédictions du jour    👇</h2>", unsafe_allow_html=True)
 st.write("\n \n \n \n \n")
