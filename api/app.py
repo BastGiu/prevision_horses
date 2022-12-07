@@ -4,16 +4,7 @@ import pandas as pd
 import streamlit as st
 from PIL import Image
 import streamlit as st
-from streamlit_toggle import st_toggle_switch
 
-st_toggle_switch(label="Label",
-                    key="Key1",
-                    default_value=False,
-                    label_after = False,
-                    inactive_color = '#D3D3D3',
-                    active_color="#11567f",
-                    track_color="#29B5E8"
-                    )
 url = 'https://raw.githubusercontent.com/BastGiu/prevision_horses/master/data/2022-12-06_df_streamlit.csv'
 
 if url == 'https://taxifare.lewagon.ai/predict':
