@@ -43,6 +43,19 @@ hide_menu_style = """
         </style>
         """
 st.markdown(hide_menu_style, unsafe_allow_html=True)
+
+# callback to update emojis in Session State
+# in response to the on_click event
+def random_emoji():
+    st.session_state.emoji = "🦄"
+
+# initialize emoji as a Session State variable
+if "emoji" not in st.session_state:
+    st.session_state.emoji = "🏇🏼"
+
+emojis = [":racehorse:", ":horse_racing:", ":carousel_horse:", ":unicorn_face:", ":money_with_wings:"]
+
+st.button(f"Magic button {st.session_state.emoji}", on_click=random_emoji)
 #if st.button("Magic Button"):
 #    st.write(' ## Prédictions du jour de ponAI 🦄')
 #else:
