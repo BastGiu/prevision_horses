@@ -7,8 +7,7 @@ import streamlit as st
 
 st.set_page_config(
     page_title='ponAI',
-    page_icon='🏇🏼',
-    layout="wide")
+    page_icon='🏇🏼')
 url = 'https://raw.githubusercontent.com/BastGiu/prevision_horses/master/data/2022-12-06_df_streamlit.csv'
 
 if url == 'https://taxifare.lewagon.ai/predict':
