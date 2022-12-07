@@ -11,11 +11,7 @@ if url == 'https://taxifare.lewagon.ai/predict':
 
     st.markdown('Maybe you want to use your own API for the prediction, not the one provided by Le Wagon...')
 
-st.markdown("<h1 style='text-align: center; color: red;'>ponAI 🏇🏼</h1>", unsafe_allow_html=True)
-
-
-
-st.title('''ponAI 🏇🏼''')
+st.markdown("<h1 style='text-align: center;'>ponAI 🏇🏼</h1>", unsafe_allow_html=True)
 
 image = Image.open('data/images/chevaux.jpg')
 st.image(image, caption='Chevaux', width=650)
@@ -30,6 +26,11 @@ def display_dataframe(data_url):
 st.write(' ## Prédictions du jour de ponAI 🦄')
 df = display_dataframe(data_url=data_url)
 st.dataframe(df)
+
+if st.button('Opérer la magie'):
+    st.write('Why hello there')
+else:
+    st.write('Goodbye')
 
 image2 = Image.open('data/images/people.png')
 st.image(image2, caption='Youpi !', width=630)
