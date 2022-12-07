@@ -16,22 +16,20 @@ st.markdown("<h1 style='text-align: center;'>ponAI 🏇🏼</h1>", unsafe_allow_
 image = Image.open('data/images/chevaux.jpg')
 st.image(image, caption='Chevaux', width=650)
 
-data_url = 'https://raw.githubusercontent.com/BastGiu/prevision_horses/master/data/2022-12-06_df_streamlit.csv'
+data_url = 'https://raw.githubusercontent.com/BastGiu/prevision_horses/master/data/df_pred_2022-12-07.csv'
 def display_dataframe(data_url):
     df = pd.read_csv(data_url)
     df.drop(columns=["jour", "proba pl"], inplace=True)
     df.rename(columns={'hippo': 'Hippodrome', 'prixnom': 'Prix', 'cheval': 'Cheval', 'numero': 'Numéro','heure':'Heure départ'}, inplace=True)
     return df
 
-col1, col2, col3 , col4, col5 = st.columns(5)
+col1, col2, col3 , col4 = st.columns(5)
 
 with col1:
     pass
 with col2:
     pass
 with col4:
-    pass
-with col5:
     pass
 with col3 :
     if st.button("Opérer la magie"):
