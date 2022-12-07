@@ -66,7 +66,6 @@ if "emoji" not in st.session_state:
 
 emojis = [":racehorse:", ":horse_racing:", ":carousel_horse:", ":unicorn_face:", ":money_with_wings:"]
 
-st.button(f"Magic button {st.session_state.emoji}", on_click=random_emoji)
 #if st.button("Magic Button"):
 #    st.write(' ## Prédictions du jour de ponAI 🦄')
 #else:
@@ -86,4 +85,4 @@ with col4:
 with col5:
     pass
 with col3 :
-    center_button = st.button('Button')
+    center_button = st.button(f"Magic button {st.session_state.emoji}", on_click=random_emoji)
