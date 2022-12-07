@@ -16,7 +16,7 @@ st.markdown("<h1 style='text-align: center;'>ponAI 🏇🏼</h1>", unsafe_allow_
 image = Image.open('data/images/chevaux.jpg')
 st.image(image, caption='Chevaux', width=650)
 
-data_url = 'https://raw.githubusercontent.com/BastGiu/prevision_horses/master/data/df_pred_2022-12-07.csv'
+data_url = 'https://raw.githubusercontent.com/BastGiu/prevision_horses/master/data/df_pred_2022-12-07.csv '
 def display_dataframe(data_url):
     df = pd.read_csv(data_url)
     df.drop(columns=["jour", "proba pl"], inplace=True)
