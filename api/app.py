@@ -24,7 +24,7 @@ link = 'https://ponai-ebal.streamlit.app/Pr%C3%A9dictions_du_jour'
 link2 = 'https://ponai-ebal.streamlit.app/Performances'
 link3 = 'https://ponai-ebal.streamlit.app/A_propos'
 
-col1, col2, col3, col4 = st.columns(4)
+col1, col2, col3, col4, col5 = st.columns(5)
 
 with col1:
     st.markdown(f'''<a href={link} target="_self"><button style="background-color:Ivory;">Prédictions du jour</button></a>''', unsafe_allow_html=True)
@@ -34,3 +34,5 @@ with col3 :
     pass
 with col4:
     st.markdown(f'''<a href={link3} target="_self"><button style="background-color:Ivory;">A propos</button></a>''', unsafe_allow_html=True)
+with col5:
+    pass
