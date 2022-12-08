@@ -22,7 +22,6 @@ st.markdown("<h3 style='text-align: center;'>L'AI qui donne des tuyaux </h3>", u
 # Horses image
 image = Image.open('data/images/chevaux.jpg')
 st.image(image, caption='Chevaux qui galopent', width=650)
-st.markdown("Jeudi 8 décembre 2022")
 data_url = 'https://raw.githubusercontent.com/BastGiu/prevision_horses/master/data/df_pred_2022-12-08.csv'
 def display_dataframe(data_url):
     df = pd.read_csv(data_url)
@@ -34,7 +33,10 @@ def display_dataframe(data_url):
 st.markdown("<h2 style='text-align: center;'>👇    Prédictions du jour    👇</h2>", unsafe_allow_html=True)
 st.write("\n \n \n \n \n")
 df = display_dataframe(data_url=data_url)
+st.markdown("Jeudi 8 décembre 2022")
 st.dataframe(df)
+
+
 st.write("\n \n \n \n \n")
 st.markdown("<h2 style='text-align: center;'>Qu'est-ce que PonAI ? 🏇🏼</h2>", unsafe_allow_html=True)
 st.write("PonAI est une intelligence artificielle (AI) qui fournit des tuyaux pour les courses hippiques du jour. Il s'agit d'un algorithme de machine learning qui est entrainé pour prédire les chevaux <i>placés</i>.\n", unsafe_allow_html=True)
