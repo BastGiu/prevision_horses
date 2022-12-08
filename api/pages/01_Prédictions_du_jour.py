@@ -3,7 +3,7 @@
 import pandas as pd
 import streamlit as st
 from PIL import Image
-import streamlit as st
+
 
 st.set_page_config(page_title="PonAI", page_icon=":horse_racing:", \
                     menu_items={"About": "A project made by Lucas, Edouard, Arnaud & Bastien"})
@@ -22,12 +22,6 @@ st.write("\n \n \n \n \n")
 df = display_dataframe(data_url=data_url)
 st.markdown("Jeudi 8 décembre 2022")
 st.dataframe(df)
-
-st.write("\n \n \n \n \n")
-st.markdown("<h2 style='text-align: center;'>Qu'est-ce que PonAI ? 🏇🏼</h2>", unsafe_allow_html=True)
-st.write("PonAI est une intelligence artificielle (AI) qui fournit des tuyaux pour les courses hippiques du jour. Il s'agit d'un algorithme de machine learning qui est entrainé pour prédire les chevaux <i>placés</i>.\n", unsafe_allow_html=True)
-st.write("\n \n ")
-st.write("\n \n ")
 
 hide_menu_style = """
         <style>
