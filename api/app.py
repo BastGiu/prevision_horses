@@ -4,7 +4,7 @@ import streamlit as st
 from PIL import Image
 import streamlit as st
 
-st.set_page_config(page_title="PonAI", page_icon="🏇🏼", \
+st.set_page_config(page_title="PonAI", page_icon=":horse_racing:", \
                     menu_items={"About": "A project made by Lucas, Edouard, Arnaud & Bastien"})
 
 url = 'https://raw.githubusercontent.com/BastGiu/prevision_horses/master/data/2022-12-06_df_streamlit.csv'
