@@ -21,13 +21,8 @@ image = Image.open('data/images/chevaux.jpg')
 st.image(image, caption='Chevaux qui galopent', width=650)
 
 link = '[PredictionsJour](https://ponai-ebal.streamlit.app/Pr%C3%A9dictions_du_jour)'
-st.markdown(link, unsafe_allow_html=True)
-
 link2 = '[Performances](https://ponai-ebal.streamlit.app/Performances)'
-st.markdown(link2, unsafe_allow_html=True)
-
 link3 = '[Informations](https://ponai-ebal.streamlit.app/A_propos)'
-st.markdown(link3, unsafe_allow_html=True)
 
 if st.button("Predictions du jour"):
     st.markdown(f'''<a href={link}''', unsafe_allow_html=True)
