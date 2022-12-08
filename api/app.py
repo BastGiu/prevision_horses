@@ -31,6 +31,6 @@ with col1:
 with col2:
     st.markdown(f'''<a href={link2} target="_self"><button style="background-color:Ivory;">Performances</button></a>''', unsafe_allow_html=True)
 with col3 :
-    st.markdown(f'''<a href={link3} target="_self"><button style="background-color:Ivory;">A propos</button></a>''', unsafe_allow_html=True)
-with col4:
     pass
+with col4:
+    st.markdown(f'''<a href={link3} target="_self"><button style="background-color:Ivory;">A propos</button></a>''', unsafe_allow_html=True)
