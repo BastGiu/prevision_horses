@@ -20,11 +20,11 @@ st.markdown("<h3 style='text-align: center;'>L'AI qui donne des tuyaux </h3>", u
 image = Image.open('data/images/chevaux.jpg')
 st.image(image, caption='Chevaux qui galopent', width=650)
 
-link = '[PredictionsJour](https://ponai-ebal.streamlit.app/Pr%C3%A9dictions_du_jour)'
-link2 = '[Performances](https://ponai-ebal.streamlit.app/Performances)'
-link3 = '[Informations](https://ponai-ebal.streamlit.app/A_propos)'
+link = 'https://ponai-ebal.streamlit.app/Pr%C3%A9dictions_du_jour'
+link2 = 'https://ponai-ebal.streamlit.app/Performances'
+link3 = 'https://ponai-ebal.streamlit.app/A_propos'
 
-col1, col2, col3 = st.columns(3)
+col1, col2, col3, col4 = st.columns(4)
 
 with col1:
     st.markdown(f'''<a href={link} target="_self"><button style="background-color:Ivory;">Prédictions du jour</button></a>''', unsafe_allow_html=True)
@@ -32,3 +32,5 @@ with col2:
     st.markdown(f'''<a href={link2} target="_self"><button style="background-color:Ivory;">Performances</button></a>''', unsafe_allow_html=True)
 with col3 :
     st.markdown(f'''<a href={link3} target="_self"><button style="background-color:Ivory;">A propos</button></a>''', unsafe_allow_html=True)
+with col4:
+    pass
