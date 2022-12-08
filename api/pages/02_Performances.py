@@ -2,7 +2,6 @@ import streamlit as st
 import pandas as pd
 
 st.markdown("# Performances ")
-st.markdown("### Bonnes prédictions du modèle sur la semaine écoulée")
 st.markdown("### Bonnes prédictions récentes ")
 st.sidebar.markdown("# Performances du modèle")
 
