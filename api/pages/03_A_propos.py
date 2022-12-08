@@ -64,14 +64,15 @@ with col5:
 with col3 :
     center_button = st.button(f"Magic button {st.session_state.emoji} \n", on_click=random_emoji)
 
+link = '[Predictions du jour](https://ponai-ebal.streamlit.app/Pr%C3%A9dictions_du_jour)'
+link2 = '[Performances](https://ponai-ebal.streamlit.app/Performances)'
+link3 = '[Main](https://ponai-ebal.streamlit.app/app)'
+
 if st.button("Predictions du jour"):
-    link = '[Predictions du jour](https://ponai-ebal.streamlit.app/Pr%C3%A9dictions_du_jour)'
-    st.markdown(link, unsafe_allow_html=True)
+    st.markdown(f'''<a href={link}''', unsafe_allow_html=True)
 
 if st.button("Performances"):
-    link2 = '[Performances](https://ponai-ebal.streamlit.app/Performances)'
-    st.markdown(link2, unsafe_allow_html=True)
+    st.markdown(f'''<a href={link2}''', unsafe_allow_html=True)
 
 if st.button("Main"):
-    link3 = '[Main](https://ponai-ebal.streamlit.app/app)'
-    st.markdown(link3, unsafe_allow_html=True)
+    st.markdown(f'''<a href={link}''', unsafe_allow_html=True)
