@@ -28,9 +28,9 @@ hide_menu_style = """
         #MainMenu {visibility: hidden;}
         </style>
         """
-link = '[Informations](https://ponai-ebal.streamlit.app/A_propos)'
-link2 = '[Performances](https://ponai-ebal.streamlit.app/Performances)'
-link3 = '[Main](https://ponai-ebal.streamlit.app/app)'
+link = 'https://ponai-ebal.streamlit.app/A_propos'
+link2 = 'https://ponai-ebal.streamlit.app/Performances'
+link3 = 'https://ponai-ebal.streamlit.app/app'
 
 if st.button("Informations"):
     st.markdown(f'''<a href={link}''', unsafe_allow_html=True)
