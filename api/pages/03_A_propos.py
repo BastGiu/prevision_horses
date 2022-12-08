@@ -64,7 +64,7 @@ with col2:
 with col4:
     pass
 with col5:
-    st.markdown(f'''<a href={link3} target="_self"><button style="background-color:Ivory;">Page principale</button></a>''', unsafe_allow_html=True)
+    st.markdown(f'''<a href={link3} target="_self"><button style="background-color:White;">Page principale</button></a>''', unsafe_allow_html=True)
 with col3 :
-    st.markdown(f'''<a href={link2} target="_self"><button style="background-color:Ivory;">Performances</button></a>''', unsafe_allow_html=True)
+    st.markdown(f'''<a href={link2} target="_self"><button style="background-color:White;">Performances</button></a>''', unsafe_allow_html=True)
     center_button = st.button(f"Magic button {st.session_state.emoji} \n", on_click=random_emoji)
