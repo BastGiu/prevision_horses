@@ -1,4 +1,3 @@
-# Contents of ~/my_app/streamlit_app.py
 # -*- coding: utf-8 -*-
 
 import pandas as pd
