@@ -15,6 +15,7 @@ url = 'https://raw.githubusercontent.com/BastGiu/prevision_horses/master/data/20
 if url == 'https://taxifare.lewagon.ai/predict':
 
     st.markdown('Maybe you want to use your own API for the prediction, not the one provided by Le Wagon...')
+
 st.sidebar.markdown("# Main page")
 st.markdown("<h1 style='text-align: center;'>PonAI 🏇🏼</h1>", unsafe_allow_html=True)
 st.markdown("<h3 style='text-align: center;'>L'AI qui donne des tuyaux </h3>", unsafe_allow_html=True)
@@ -22,6 +23,7 @@ st.markdown("<h3 style='text-align: center;'>L'AI qui donne des tuyaux </h3>", u
 # Horses image
 image = Image.open('data/images/chevaux.jpg')
 st.image(image, caption='Chevaux qui galopent', width=650)
+
 data_url = 'https://raw.githubusercontent.com/BastGiu/prevision_horses/master/data/df_pred_2022-12-08.csv'
 def display_dataframe(data_url):
     df = pd.read_csv(data_url)
@@ -36,15 +38,16 @@ df = display_dataframe(data_url=data_url)
 st.markdown("Jeudi 8 décembre 2022")
 st.dataframe(df)
 
-
 st.write("\n \n \n \n \n")
 st.markdown("<h2 style='text-align: center;'>Qu'est-ce que PonAI ? 🏇🏼</h2>", unsafe_allow_html=True)
 st.write("PonAI est une intelligence artificielle (AI) qui fournit des tuyaux pour les courses hippiques du jour. Il s'agit d'un algorithme de machine learning qui est entrainé pour prédire les chevaux <i>placés</i>.\n", unsafe_allow_html=True)
 st.write("\n \n ")
 st.write("\n \n ")
-# People images
+
+# People image
 image2 = Image.open('data/images/people.png')
 st.image(image2, caption='Youpi !', width=650)
+
 st.write("\n \n \n")
 st.write("\n \n \n")
 
@@ -53,6 +56,7 @@ hide_menu_style = """
         #MainMenu {visibility: hidden;}
         </style>
         """
+
 st.markdown(hide_menu_style, unsafe_allow_html=True)
 
 # callback to update emojis in Session State
