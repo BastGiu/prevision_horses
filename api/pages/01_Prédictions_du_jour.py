@@ -10,7 +10,7 @@ st.set_page_config(
     page_icon='🏇🏼'
     )
 
-
+st.sidebar.markdown("# Prédictions du jour")
 data_url = 'https://raw.githubusercontent.com/BastGiu/prevision_horses/master/data/df_pred_2022-12-08_pr_bastos.csv'
 def display_dataframe(data_url):
     df = pd.read_csv(data_url)
