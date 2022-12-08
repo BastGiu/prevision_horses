@@ -12,7 +12,6 @@ st.set_page_config(
 
 
 def main_page():
-    st.markdown("# PonAI 🏇🏼")
     st.sidebar.markdown("# Main page")
 
 def page2():
