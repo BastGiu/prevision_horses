@@ -2,8 +2,8 @@
 import streamlit as st
 
 def main_page():
-    st.markdown("# Main page 🎈")
-    st.sidebar.markdown("# Main page 🎈")
+    st.markdown("# PonAI 🏇🏼")
+    st.sidebar.markdown("# Main page")
 
 def page2():
     st.markdown("# Prevision of tomorrow")
