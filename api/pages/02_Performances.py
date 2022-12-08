@@ -3,7 +3,7 @@ import pandas as pd
 
 st.markdown("# Performances ")
 st.markdown("### Bonnes prédictions du modèle sur la semaine écoulée")
-st.markdown("### Données d'hier ")
+st.markdown("### Bonnes prédictions récentes ")
 st.sidebar.markdown("# Performances du modèle")
 
 data_url = 'https://raw.githubusercontent.com/BastGiu/prevision_horses/master/data/df_perf_modele_2022-12-03__2022-12-07.csv'
