@@ -29,10 +29,12 @@ hide_menu_style = """
         </style>
         """
 link = '[Informations](https://ponai-ebal.streamlit.app/A_propos)'
-st.markdown(link, unsafe_allow_html=True)
-
 link2 = '[Performances](https://ponai-ebal.streamlit.app/Performances)'
-st.markdown(link2, unsafe_allow_html=True)
-
 link3 = '[Main](https://ponai-ebal.streamlit.app/app)'
-st.markdown(link3, unsafe_allow_html=True)
+
+if st.button("Informations"):
+    st.markdown(f'''<a href={link}''', unsafe_allow_html=True)
+if st.button("Performances"):
+    st.markdown(f'''<a href={link2}''', unsafe_allow_html=True)
+if st.button("Main"):
+    st.markdown(f'''<a href={link3}''', unsafe_allow_html=True)
