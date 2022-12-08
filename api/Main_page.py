@@ -23,11 +23,6 @@ page_names_to_funcs = {
 selected_page = st.sidebar.selectbox("Navigate", page_names_to_funcs.keys())
 page_names_to_funcs[selected_page]()
 
-st.set_page_config(
-    page_title='ponAI',
-    page_icon='🏇🏼'
-    )
-
 url = 'https://raw.githubusercontent.com/BastGiu/prevision_horses/master/data/2022-12-06_df_streamlit.csv'
 
 if url == 'https://taxifare.lewagon.ai/predict':
