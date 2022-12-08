@@ -16,7 +16,7 @@ if url == 'https://taxifare.lewagon.ai/predict':
 
     st.markdown('Maybe you want to use your own API for the prediction, not the one provided by Le Wagon...')
 
-st.sidebar.markdown("# Main page")
+st.sidebar.markdown("# Prédictions du jour")
 st.markdown("<h1 style='text-align: center;'>PonAI 🏇🏼</h1>", unsafe_allow_html=True)
 st.markdown("<h3 style='text-align: center;'>L'AI qui donne des tuyaux </h3>", unsafe_allow_html=True)
 
