@@ -69,10 +69,10 @@ link2 = 'https://ponai-ebal.streamlit.app/Performances'
 link3 = 'https://ponai-ebal.streamlit.app/app'
 
 if st.button("Predictions du jour"):
-    st.markdown(f'''<a href={link}''', unsafe_allow_html=True)
+    st.markdown(f'''<a href={link}>''', unsafe_allow_html=True)
 
 if st.button("Performances"):
-    st.markdown(f'''<a href={link2}''', unsafe_allow_html=True)
+    st.markdown(f'''<a href={link2}>''', unsafe_allow_html=True)
 
 if st.button("Main"):
-    st.markdown(f'''<a href={link}''', unsafe_allow_html=True)
+    st.markdown(f'''<a href={link}>''', unsafe_allow_html=True)
