@@ -1,4 +1,4 @@
-'''
+
 # -*- coding: utf-8 -*-
 import pandas as pd
 import streamlit as st
@@ -179,4 +179,3 @@ with col5:
     pass
 with col3 :
     center_button = st.button(f"Magic button {st.session_state.emoji} \n", on_click=random_emoji)
-'''
