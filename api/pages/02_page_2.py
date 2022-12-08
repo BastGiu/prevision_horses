@@ -1,4 +1,4 @@
 import streamlit as st
 
-st.markdown("# Page 2 ❄️")
-st.sidebar.markdown("# Page 2 ❄️")
+st.markdown("# Prédictions du jour")
+st.sidebar.markdown("#  Prédictions du jour")
