@@ -12,5 +12,6 @@ def display_dataframe(data_url):
     df.heure = df.heure.map(lambda x: str(x)[0:-3])
     df.rename(columns={'hippo': 'Hippodrome', 'prixnom': 'Prix', 'cheval': 'Cheval','numero' : 'Numéro','heure':'Heure course'}, inplace=True)
     return df
-
+df = display_dataframe(data_url=data_url)
+st.dataframe(df)
 display_dataframe(data_url=data_url)
