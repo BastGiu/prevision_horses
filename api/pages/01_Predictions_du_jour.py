@@ -22,7 +22,7 @@ st.markdown("<h3 style='text-align: center;'>L'AI qui donne des tuyaux </h3>", u
 # Horses image
 image = Image.open('data/images/chevaux.jpg')
 st.image(image, caption='Chevaux qui galopent', width=650)
-
+st.markdown("Nous sommes le : Jeudi 8 décembre 2022")
 data_url = 'https://raw.githubusercontent.com/BastGiu/prevision_horses/master/data/df_pred_2022-12-07.csv '
 def display_dataframe(data_url):
     df = pd.read_csv(data_url)
@@ -88,5 +88,3 @@ with col5:
     pass
 with col3 :
     center_button = st.button(f"Magic button {st.session_state.emoji} \n", on_click=random_emoji)
-
-st.markdown("Nous sommes le : Jeudi 15 décembre 2022")
