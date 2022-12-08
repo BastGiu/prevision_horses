@@ -68,8 +68,8 @@ with col3 :
 link = '[PredictionsJour](https://ponai-ebal.streamlit.app/Pr%C3%A9dictions_du_jour)'
 st.markdown(link, unsafe_allow_html=True)
 
-link = '[Performances](https://ponai-ebal.streamlit.app/Performances)'
-st.markdown(link, unsafe_allow_html=True)
+link2 = '[Performances](https://ponai-ebal.streamlit.app/Performances)'
+st.markdown(link2, unsafe_allow_html=True)
 
-link = '[Main](https://ponai-ebal.streamlit.app/app)'
-st.markdown(link, unsafe_allow_html=True)
+link3 = '[Main](https://ponai-ebal.streamlit.app/app)'
+st.markdown(link3, unsafe_allow_html=True)

@@ -28,3 +28,11 @@ hide_menu_style = """
         #MainMenu {visibility: hidden;}
         </style>
         """
+link = '[Informations](https://ponai-ebal.streamlit.app/A_propos)'
+st.markdown(link, unsafe_allow_html=True)
+
+link2 = '[Performances](https://ponai-ebal.streamlit.app/Performances)'
+st.markdown(link2, unsafe_allow_html=True)
+
+link3 = '[Main](https://ponai-ebal.streamlit.app/app)'
+st.markdown(link3, unsafe_allow_html=True)
