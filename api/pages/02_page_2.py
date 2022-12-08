@@ -1,4 +1,4 @@
 import streamlit as st
 
-st.markdown("# Prédictions du jour")
-st.sidebar.markdown("#  Prédictions du jour")
+st.markdown("# Performances du modèle sur les cinq derniers jours")
+st.sidebar.markdown("#  Performances du modèle")
