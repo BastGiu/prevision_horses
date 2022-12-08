@@ -15,12 +15,12 @@ def main_page():
     st.sidebar.markdown("# Main page")
 
 def page2():
-    st.markdown("# Prevision of tomorrow")
-    st.sidebar.markdown("# Prevision of tomorrow ")
+    st.markdown("# Previsions des courses de demain")
+    st.sidebar.markdown("# Future Previsions")
 
 page_names_to_funcs = {
     "Main Page": main_page,
-    "Page 2": page2,
+    "Future previsions": page2,
 }
 
 selected_page = st.sidebar.selectbox("Select a page", page_names_to_funcs.keys())
