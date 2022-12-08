@@ -1,3 +1,4 @@
 import streamlit as st
 
-st.markdown("# Eh nique ta mere au pire ")
+st.markdown("# Performances ")
+st.markdown("### Bonnes prédictions du modèle")
