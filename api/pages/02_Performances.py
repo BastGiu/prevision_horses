@@ -1,6 +1,9 @@
 import streamlit as st
 import pandas as pd
 
+st.set_page_config(page_title="PonAI", page_icon="🏇🏼", layout="wide", \
+                    menu_items={"About": "A project made by Lucas, Edouard, Arnaud & Bastien"})
+
 st.markdown("# Performances ")
 st.markdown("### Bonnes prédictions récentes ")
 st.sidebar.markdown("# Performances du modèle")
