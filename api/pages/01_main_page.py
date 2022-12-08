@@ -89,4 +89,4 @@ with col5:
 with col3 :
     center_button = st.button(f"Magic button {st.session_state.emoji} \n", on_click=random_emoji)
 
-st.markdown("")
+st.markdown("Nous sommes le : Jeudi 15 décembre 2022")
