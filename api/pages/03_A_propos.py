@@ -53,21 +53,18 @@ emojis = [":racehorse:", ":horse_racing:", ":carousel_horse:", ":unicorn_face:",
 # st.write("ponAI est une intelligence artificielle qui a pour but de donner des prédictions sur le podium final")
 col1, col2, col3 , col4, col5 = st.columns(5)
 
+link = 'https://ponai-ebal.streamlit.app/Pr%C3%A9dictions_du_jour'
+link2 = 'https://ponai-ebal.streamlit.app/Performances'
+link3 = 'https://ponai-ebal.streamlit.app/app'
+
 with col1:
-    pass
+    st.markdown(f'''<a href={link} target="_self"><button style="background-color:Ivory;">Prédictions du jour</button></a>''', unsafe_allow_html=True)
 with col2:
     pass
 with col4:
     pass
 with col5:
-    pass
+    st.markdown(f'''<a href={link3} target="_self"><button style="background-color:Ivory;">Page principale</button></a>''', unsafe_allow_html=True)
 with col3 :
+    st.markdown(f'''<a href={link2} target="_self"><button style="background-color:Ivory;">Performances</button></a>''', unsafe_allow_html=True)
     center_button = st.button(f"Magic button {st.session_state.emoji} \n", on_click=random_emoji)
-
-link = 'https://ponai-ebal.streamlit.app/Pr%C3%A9dictions_du_jour'
-link2 = 'https://ponai-ebal.streamlit.app/Performances'
-link3 = 'https://ponai-ebal.streamlit.app/app'
-
-st.markdown(f'''<a href={link} target="_self"><button style="background-color:Ivory;">Prédictions du jour</button></a>''', unsafe_allow_html=True)
-st.markdown(f'''<a href={link2} target="_self"><button style="background-color:Ivory;">Performances</button></a>''', unsafe_allow_html=True)
-st.markdown(f'''<a href={link3} target="_self"><button style="background-color:Ivory;">Page principale</button></a>''', unsafe_allow_html=True)
