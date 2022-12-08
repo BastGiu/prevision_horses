@@ -4,7 +4,7 @@ import pandas as pd
 import streamlit as st
 from PIL import Image
 import streamlit as st
-from app import performances
+from pages import performances
 
 st.set_page_config(
     page_title='ponAI',
