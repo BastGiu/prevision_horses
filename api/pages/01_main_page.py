@@ -1,5 +1,6 @@
-# -*- coding: utf-8 -*-
 
+# -*- coding: utf-8 -*-
+'''
 import pandas as pd
 import streamlit as st
 from PIL import Image
@@ -180,3 +181,4 @@ with col3 :
     center_button = st.button(f"Magic button {st.session_state.emoji} \n", on_click=random_emoji)
 
 st.markdown("")
+'''
