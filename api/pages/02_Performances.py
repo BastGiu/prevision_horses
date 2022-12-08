@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 
-st.set_page_config(page_title="PonAI", page_icon="🏇🏼", layout="wide", \
+st.set_page_config(page_title="PonAI", page_icon="🏇🏼", \
                     menu_items={"About": "A project made by Lucas, Edouard, Arnaud & Bastien"})
 
 st.markdown("# Performances ")
