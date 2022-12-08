@@ -1,4 +1,4 @@
-
+'''
 # -*- coding: utf-8 -*-
 import pandas as pd
 import streamlit as st
@@ -7,7 +7,8 @@ import streamlit as st
 
 st.set_page_config(
     page_title='ponAI',
-    page_icon='🏇🏼')
+    page_icon='🏇🏼'
+    )
 
 url = 'https://raw.githubusercontent.com/BastGiu/prevision_horses/master/data/2022-12-06_df_streamlit.csv'
 
@@ -178,3 +179,4 @@ with col5:
     pass
 with col3 :
     center_button = st.button(f"Magic button {st.session_state.emoji} \n", on_click=random_emoji)
+'''
