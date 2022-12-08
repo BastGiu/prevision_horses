@@ -24,9 +24,6 @@ link = '[PredictionsJour](https://ponai-ebal.streamlit.app/Pr%C3%A9dictions_du_j
 link2 = '[Performances](https://ponai-ebal.streamlit.app/Performances)'
 link3 = '[Informations](https://ponai-ebal.streamlit.app/A_propos)'
 
-if st.button("Predictions du jour"):
-    st.markdown(f'''<a href={link}''', unsafe_allow_html=True)
-if st.button("Performances"):
-    st.markdown(f'''<a href={link2}''', unsafe_allow_html=True)
-if st.button("Informations"):
-    st.markdown(f'''<a href={link3}''', unsafe_allow_html=True)
+st.markdown(f'''<a href={link}><button style="background-color:Ivory;">Prédictions du jour</button></a>''', unsafe_allow_html=True)
+st.markdown(f'''<a href={link2}><button style="background-color:Ivory;">Performances</button></a>''', unsafe_allow_html=True)
+st.markdown(f'''<a href={link3}><button style="background-color:Ivory;">A propos</button></a>''', unsafe_allow_html=True)
