@@ -46,7 +46,7 @@ st.write("\n \n ")
 
 # People image
 image2 = Image.open('data/images/people.png')
-st.image(image2, caption='Youpi !', width=650)
+st.image(image2, caption='  Youpi !', width=650)
 
 st.write("\n \n \n")
 st.write("\n \n \n")
