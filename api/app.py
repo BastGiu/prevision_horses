@@ -4,12 +4,17 @@ import pandas as pd
 import streamlit as st
 from PIL import Image
 import streamlit as st
-from api.pages import performances
+
 
 st.set_page_config(
     page_title='ponAI',
     page_icon='🏇🏼')
 
+def performances():
+    st.markdown("# Bonnes prédictions de la semaine")
+    st.sidebar.markdown("# Bonnes prédictions")
+    st.markdown("# Performances du modèle sur les cinq derniers jours")
+    st.sidebar.markdown("#  Performances du modèle")
 
 def main_page():
     st.sidebar.markdown("# Main page")
