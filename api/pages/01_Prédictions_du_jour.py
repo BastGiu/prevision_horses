@@ -32,9 +32,6 @@ link = 'https://ponai-ebal.streamlit.app/A_propos'
 link2 = 'https://ponai-ebal.streamlit.app/Performances'
 link3 = 'https://ponai-ebal.streamlit.app/app'
 
-if st.button("Informations"):
-    st.markdown(f'''<a href={link}''', unsafe_allow_html=True)
-if st.button("Performances"):
-    st.markdown(f'''<a href={link2}''', unsafe_allow_html=True)
-if st.button("Main"):
-    st.markdown(f'''<a href={link3}''', unsafe_allow_html=True)
+st.markdown(f'''<a href={link}><button style="background-color:GreenYellow;">A propos</button></a>''', unsafe_allow_html=True)
+st.markdown(f'''<a href={link2}><button style="background-color:GreenYellow;">Performances</button></a>''', unsafe_allow_html=True)
+st.markdown(f'''<a href={link3}><button style="background-color:GreenYellow;">Main page</button></a>''', unsafe_allow_html=True)

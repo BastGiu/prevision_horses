@@ -21,9 +21,7 @@ st.dataframe(df)
 link = 'https://ponai-ebal.streamlit.app/Pr%C3%A9dictions_du_jour'
 link2 = 'https://ponai-ebal.streamlit.app/A_propos'
 link3 = 'https://ponai-ebal.streamlit.app/app'
-if st.button("Predictions du jour"):
-    st.markdown(f'''<a href={link}''', unsafe_allow_html=True)
-if st.button("A propos"):
-    st.markdown(f'''<a href={link2}''', unsafe_allow_html=True)
-if st.button("App"):
-    st.markdown(f'''<a href={link3}''', unsafe_allow_html=True)
+
+st.markdown(f'''<a href={link}><button style="background-color:GreenYellow;">Prédictions du jour</button></a>''', unsafe_allow_html=True)
+st.markdown(f'''<a href={link2}><button style="background-color:GreenYellow;">A propos</button></a>''', unsafe_allow_html=True)
+st.markdown(f'''<a href={link3}><button style="background-color:GreenYellow;">Main page</button></a>''', unsafe_allow_html=True)
