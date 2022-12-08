@@ -63,3 +63,13 @@ with col5:
     pass
 with col3 :
     center_button = st.button(f"Magic button {st.session_state.emoji} \n", on_click=random_emoji)
+
+
+link = '[PredictionsJour](https://ponai-ebal.streamlit.app/Pr%C3%A9dictions_du_jour)'
+st.markdown(link, unsafe_allow_html=True)
+
+link = '[Performances](https://ponai-ebal.streamlit.app/Performances)'
+st.markdown(link, unsafe_allow_html=True)
+
+link = '[Main](https://ponai-ebal.streamlit.app/app)'
+st.markdown(link, unsafe_allow_html=True)

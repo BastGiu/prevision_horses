@@ -19,3 +19,12 @@ st.markdown("<h3 style='text-align: center;'>L'AI qui donne des tuyaux </h3>", u
 # Horses image
 image = Image.open('data/images/chevaux.jpg')
 st.image(image, caption='Chevaux qui galopent', width=650)
+
+link = '[PredictionsJour](https://ponai-ebal.streamlit.app/Pr%C3%A9dictions_du_jour)'
+st.markdown(link, unsafe_allow_html=True)
+
+link = '[Performances](https://ponai-ebal.streamlit.app/Performances)'
+st.markdown(link, unsafe_allow_html=True)
+
+link = '[Informations](https://ponai-ebal.streamlit.app/A_propos)'
+st.markdown(link, unsafe_allow_html=True)

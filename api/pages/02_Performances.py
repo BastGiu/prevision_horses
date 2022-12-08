@@ -17,3 +17,12 @@ def display_dataframe(data_url):
     return df
 df = display_dataframe(data_url=data_url)
 st.dataframe(df)
+
+link = '[PredictionsJour](https://ponai-ebal.streamlit.app/Pr%C3%A9dictions_du_jour)'
+st.markdown(link, unsafe_allow_html=True)
+
+link = '[Informations](https://ponai-ebal.streamlit.app/A_propos)'
+st.markdown(link, unsafe_allow_html=True)
+
+link = '[Main](https://ponai-ebal.streamlit.app/app)'
+st.markdown(link, unsafe_allow_html=True)
