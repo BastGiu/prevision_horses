@@ -4,6 +4,7 @@ import pandas as pd
 import streamlit as st
 from PIL import Image
 import streamlit as st
+from app import performances
 
 st.set_page_config(
     page_title='ponAI',
@@ -12,10 +13,6 @@ st.set_page_config(
 
 def main_page():
     st.sidebar.markdown("# Main page")
-
-def performances():
-    st.markdown("# Bonnes prédictions de la semaine")
-    st.sidebar.markdown("# Bonnes prédictions")
 
 page_names_to_funcs = {
     "Main Page": main_page,
