@@ -7,12 +7,6 @@ import streamlit as st
 st.set_page_config(page_title="PonAI", page_icon=":horse_racing:", \
                     menu_items={"About": "A project made by Lucas, Edouard, Arnaud & Bastien"})
 
-url = 'https://raw.githubusercontent.com/BastGiu/prevision_horses/master/data/df_pred_2022-12-09_pr_bastos.csv'
-
-if url == 'https://taxifare.lewagon.ai/predict':
-
-    st.markdown('Maybe you want to use your own API for the prediction, not the one provided by Le Wagon...')
-
 st.markdown("<h1 style='text-align: center;'>PonAI 🏇🏼</h1>", unsafe_allow_html=True)
 st.markdown("<h3 style='text-align: center;'>L'AI qui donne des tuyaux </h3>", unsafe_allow_html=True)
 
