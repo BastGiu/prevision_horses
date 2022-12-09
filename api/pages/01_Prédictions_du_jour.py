@@ -20,7 +20,7 @@ def display_dataframe(data_url):
 st.markdown("<h2 style='text-align: center;'>👇    Prédictions du jour    👇</h2>", unsafe_allow_html=True)
 st.write("\n \n \n \n \n")
 df = display_dataframe(data_url=data_url)
-st.markdown("Jeudi 8 décembre 2022")
+st.markdown("Vendredi 9 Décembre 2022")
 st.dataframe(df)
 
 hide_menu_style = """
